@@ -14,6 +14,6 @@ defmodule Y2024.Day01Test do
     input = "lib/y2024/input/d01t.txt"
     result = part2(input)
 
-    assert result
+    assert result == 31
   end
 end
