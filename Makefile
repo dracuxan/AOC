@@ -2,7 +2,7 @@ MIX := mix
 IEX := iex
 ELIXIR := elixir
 
-all: deps test
+all: deps
 
 check-tools:
 	@if ! command -v $(ELIXIR) >/dev/null 2>&1; then \
