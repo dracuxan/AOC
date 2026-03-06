@@ -5,7 +5,7 @@ defmodule Y2024.Day01 do
     |> String.split("\n", trim: true)
     |> Enum.map(&String.split(&1, " ", trim: true))
     |> Enum.map(fn row -> Enum.map(row, &String.to_integer/1) end)
-    |> List.zip()
+    |> Enum.zip()
     |> Enum.map(&Tuple.to_list/1)
   end
 
