@@ -14,8 +14,8 @@ jobs:
 
     strategy:
       matrix:
-        elixir: ['1.17']
-        otp: ['25.0']
+        elixir: ["1.17"]
+        otp: ["25.0"]
 
     steps:
       # Checkout the code
@@ -31,8 +31,8 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: make
+        run: mix deps.get
 
       # Run tests
       - name: Run tests
-        run: make test
+        run: mix test
